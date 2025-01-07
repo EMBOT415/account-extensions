@@ -30,7 +30,7 @@ export default extension('customer-account.order-status.block.render', (root, ap
   
   linkContentWrapper.append(linkText); 
 
-  textWrapper.append(linkContentWrapper); 
+  textWrapper.append(linkContentWrapper);
 
   contentWrapper.append(textWrapper);
 
