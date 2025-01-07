@@ -19,6 +19,7 @@ export default extension('customer-account.order-status.block.render', (root, ap
     "🎉 You've earned 1,000 points from this order. You've been upgraded to Platinum tier."
   );
 
+  
   const linkContentWrapper = root.createComponent(Link); 
 
   const linkText = root.createComponent( TextBlock,
