@@ -28,7 +28,7 @@ export default extension('customer-account.order-status.block.render', (root, ap
     "View rewards"
   ); 
   
-  linkContentWrapper.append(linkText); 
+  linkContentWrapper.append(linkText);
 
   textWrapper.append(linkContentWrapper);
 
