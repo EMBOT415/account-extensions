@@ -1,5 +1,6 @@
 import { extension, Banner, BlockStack, TextBlock, Link } from '@shopify/ui-extensions/customer-account';
 
+// [START order-status-block.build-ui]
 export default extension('customer-account.order-status.block.render', (root, api) => {
   const { i18n, extension } = api;
 
@@ -19,7 +20,6 @@ export default extension('customer-account.order-status.block.render', (root, ap
     "🎉 You've earned 1,000 points from this order. You've been upgraded to Platinum tier."
   );
 
-  
   const linkContentWrapper = root.createComponent(Link); 
 
   const linkText = root.createComponent( TextBlock,
@@ -29,9 +29,9 @@ export default extension('customer-account.order-status.block.render', (root, ap
     "View rewards"
   ); 
   
-  linkContentWrapper.append(linkText);
+  linkContentWrapper.append(linkText); 
 
-  textWrapper.append(linkContentWrapper);
+  textWrapper.append(linkContentWrapper); 
 
   contentWrapper.append(textWrapper);
 
@@ -41,3 +41,4 @@ export default extension('customer-account.order-status.block.render', (root, ap
    app
   );
 });
+// [END order-status-block.build-ui]
